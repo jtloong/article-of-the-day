@@ -4,7 +4,7 @@ I use [Airtable](https://airtable.com/) to record what I've been reading / liste
 
 This script is meant to run on CRON to send me one random paper/article from my to-read list on Airtable everyday via [Pushbullet](https://www.pushbullet.com/). 
 
-## Instructions
+## Usage
 
 If you want to run this yourself you'll need to modify this to fit your Airtable set up. Major things are authentication, I have a private `.json` file with the following format:
 
