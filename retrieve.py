@@ -22,8 +22,6 @@ def select_article(key):
 		try:
 			titles.append(fields['Name'])
 			links.append(fields['Link'])
-			# print(fields['Name'])
-
 		except:
 			break
 
