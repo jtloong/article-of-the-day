@@ -1,6 +1,6 @@
 # article-of-the-day
 
-I use [Airtable](https://airtable.com/) to record what I've been reading / listening to (books, papers, articles, podcasts, lectures). I also use it to record things I want to read in the future, except I found I would never read it.
+I use [Airtable](https://airtable.com/) to record what I've been reading / listening to (books, papers, articles, podcasts, lectures). I also use it to record things I want to read in the future, except I found I would often never go back to read the things I saved.
 
 This script is meant to run on CRON to send me one random paper/article from my to-read list on Airtable everyday via [Pushbullet](https://www.pushbullet.com/). 
 
