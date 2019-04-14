@@ -15,22 +15,25 @@ def select_article(key):
 
 	records = r.json()
 
-	titles, links = [], []
+	titles, links, tags = [], [], []
 	for item in records['records']:
 		fields = item['fields'] 
-
 		try:
 			titles.append(fields['Name'])
 			links.append(fields['Link'])
+			tags.append(fields['Tag'])
 		except:
 			break
 
 	selection = random.choice(range(len(titles)))
 
-	return titles[selection], links[selection]
+	return titles[selection], links[selection], tags[selection]
 
 
-article_title, article_link = select_article(airtable_key)
+article_title, article_link, article_tags = select_article(airtable_key)
+
+for i in article_tags:
+	article_title += ' #' + i
 
 print(article_title)
 print(article_link)
